@@ -1,7 +1,7 @@
 # http://tools.seobook.com/robots-txt/
 
 User-agent: *
-Disallow: /assets/
+Disallow: /static/
 Disallow: /includes/
 
-sitemap: https://ocr-dw.s3.eu-west-3.amazonaws.com/la-chouette-agence/manifest.json
+sitemap: https://joellesenne.github.io/ocr-dw-p4-la-chouette-agence/manifest.json
