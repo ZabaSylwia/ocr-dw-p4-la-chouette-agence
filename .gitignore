@@ -1,0 +1,11 @@
+# Dependency
+node_modules
+
+# Git config
+.git
+
+# IDE config
+.vscode
+
+# OSX
+.DS_Store
