@@ -1,0 +1,45 @@
+Options +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Redirection page index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . Redirect https://la-chouette-agence.fr/index.html [L]
+
+# Redirection Host www.exemple.com => exemple.com
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+</IfModule>
+
+# One month for most static assets <https://varvy.com/pagespeed/cache-control.html#basics>
+<filesMatch "\<PATCH>\.(css)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+<filesMatch "\<PATCH>\.(jpg|jpeg|png|gif|svg)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+<filesMatch "\<PATCH>\\.(js)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+
+# Compress files CSS and JS with GZIP <https://httpd.apache.org/docs/2.4/mod/mod_deflate.html>
+<IfModule mod_headers.c>
+
+    RewriteCond "%{HTTP:Accept-encoding}" "gzip"
+    RewriteCond "%{REQUEST_FILENAME}\.gz" -s
+    RewriteRule "^(.*)\.(css|js)"         "$1\.$2\.gz" [QSA]
+
+    RewriteRule "\<PATCH>\.css\.gz$" "-" [T=text/css,E=no-gzip:1]
+    RewriteRule "\<PATCH>\.js\.gz$"  "-" [T=text/javascript,E=no-gzip:1]
+
+    <FilesMatch "(\.js\.gz|\.css\.gz)$">
+      Header append Content-Encoding gzip
+      Header append Vary Accept-Encoding
+    </FilesMatch>
+</IfModule>

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<!--
+  Name : La chouette agence
+  Create : 2020/03/12
+  Version : 1.0.0
+  Author : François, Joël Lesenne
+  Site : <https://joellesenne.github.io/ocr-dw-p4-la-chouette-agence>
+  Depot : <https://github.com/joellesenne/ocr-dw-p4-la-chouette-agence>
+  Licence : MIT <https://mit-license.org/>
+-->
+<!-- Accessibility - Lang default ! -->
+<html lang="fr" itemscope itemtype="https://schema.org/Article">
+  <!-- A list of everything that *could* go in the <head> of your document <https://github.com/joshbuchea/HEAD> -->
+  <head>
+    <!--
+      Set the character encoding for this      document, so that
+      all characters within the UTF-8 space (such      as emoji)
+      are rendered correctly.
+    -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <!-- Set the document's title -->
+    <title>Accueil – La chouette agence – Webdesign basée à Lyon</title>
+
+    <!-- Name of web application (only should be used if the website is used as an app) -->
+    <meta name="application-name" content="La chouette agence" />
+
+    <!-- Theme Color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#793d0c" />
+
+    <!-- Short description of the document (limit to 150 characters) -->
+    <!-- This content *may* be used as a part of search engine results. -->
+    <meta
+      name="description"
+      content="Agence Web basée à Lyon – La chouette agence est une agence de Webdesign qui aide les entreprises à devenir attractives et visibles sur internet..."
+    />
+
+    <!-- SEO - Bad meta keywords ! -->
+
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index,follow" />
+    <!-- All Search Engines -->
+    <meta name="googlebot" content="index,follow" />
+    <!-- Google Specific -->
+
+    <!-- schemaorg using microdata for SEO <schema.org> -->
+    <link
+      rel="author"
+      href="https://ocr-dw.s3.eu-west-3.amazonaws.com/la-chouette-agence/contact.html"
+    />
+    <link
+      rel="publisher"
+      href="https://ocr-dw.s3.eu-west-3.amazonaws.com/la-chouette-agence/index.html"
+    />
+    <meta itemprop="name" content="La chouette agence" />
+    <meta
+      itemprop="description"
+      content="Agence Web basée à Lyon – La chouette agence est une agence de Webdesign qui aide les entreprises à devenir attractives et visibles sur internet..."
+    />
+    <meta
+      itemprop="image"
+      content="https://ocr-dw.s3.eu-west-3.amazonaws.com/la-chouette-agence/assets/images/mockups.jpg"
+    />
+
+    <!-- SEO - Twitter Card data + Open Graph dat -->
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@lachouetteagence" />
+    <meta
+      name="twitter:title"
+      content="Accueil – La chouette agence – WebDesign basée à Lyon"
+    />
+    <meta
+      name="twitter:url"
+      content="https://ocr-dw.s3.eu-west-3.amazonaws.com/la-chouette-agence/index.html"
+    />
+    <meta
+      name="twitter:description"
+      content="Agence Web basée à Lyon – La chouette agence est une agence de Webdesign qui aide les entreprises à devenir attractives et visibles sur internet..."
+    />
+    <meta name="twitter:creator" content="@lachouetteagence" />
+    <!-- Twitter Summary card images must be at least 200x200px -->
+    <meta
+      name="twitter:image"
+      content="https://ocr-dw.s3.eu-west-3.amazonaws.com/la-chouette-agence/assets/images/mockups.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="La chouette agence - identité en image"
+    />
+
+    <!-- Open Graph data -->
+    <meta
+      property="og:title"
+      content="Accueil – La chouette agence – WebDesign basée à Lyon"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://ocr-dw.s3.eu-west-3.amazonaws.com/la-chouette-agence/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://ocr-dw.s3.eu-west-3.amazonaws.com/la-chouette-agence/assets/images/mockups.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="La chouette agence - identité en image"
+    />
+    <meta
+      property="og:description"
+      content="Agence Web basée à Lyon – La chouette agence est une agence de Webdesign qui aide les entreprises à devenir attractives et visibles sur internet..."
+    />
+    <meta property="og:site_name" content="La chouette agence" />
+    <meta property="og:local" content="fr_FR" />
+    <!-- <meta property="fb:admins" content="Facebook numeric ID" /> -->
+
+    <!-- Helps prevent duplicate content issues -->
+    <link
+      rel="canonical"
+      href="https://ocr-dw.s3.eu-west-3.amazonaws.com/la-chouette-agence/index.html"
+    />
+
+    <!-- Best Practices - favicon.ico ! -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Apple Touch Icon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./static/icons/icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="96x96"
+      href="./static/icons/icon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="./static/icons/icon-128x128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./static/icons/icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./static/icons/icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="./static/icons/icon-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="384x384"
+      href="./static/icons/icon-384x384.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="./static/icons/icon-512x512.png"
+    />
+
+    <!-- Links to a JSON file that specifies "installation" credentials for the web		applications -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Google Fonts for logo -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Elsie+Swash+Caps&display=swap"
+    />
+
+    <!-- Performance - minify and concat CSS -->
+    <link rel="stylesheet" href="./static/css/main.min.css" />
+  </head>
+  <body>
+    <!-- Principal conteneur -->
+    <div class="page-container">
+      <!-- Header bloc-0 => bloc-1 -->
+      <header>
+        <!-- bloc-0-navigation -->
+        <div
+          id="bloc-0"
+          class="bloc bgc-white l-bloc "
+          role="navigation"
+          aria-label="primary"
+        >
+          <div class="container bloc-sm">
+            <div class="navbar row">
+              <div class="navbar-header">
+                <!-- SEO – Detection of a content of cloaking -->
+
+                <a class="navbar-brand" href="index.html">
+                  <!-- Accessibility – Revise the text in the alt attribute -->
+                  <img
+                    src="./static/images/la-chouette-agence.png"
+                    alt="Une chouette transparente"
+                    height="40"
+                  />
+                  La chouette agence
+                </a>
+
+                <!-- SEO – Detection of a content of cloaking -->
+
+                <button
+                  id="nav-toggle"
+                  type="button"
+                  class="ui-navbar-toggle navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".navbar-1"
+                  aria-label="menu"
+                >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div
+                class="collapse navbar-collapse navbar-1 special-dropdown-nav"
+              >
+                <ul class="site-navigation nav navbar-nav">
+                  <li><a class="active" href="index.html">Accueil</a></li>
+
+                  <!-- SEO - Name URL contact ! -->
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bloc-0-navigation END -->
+
+        <!-- bloc-1-presentation -->
+        <div
+          id="bloc-1-hero"
+          class="bloc bgc-dark-slate-blue bg-banner d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
+        >
+          <div class="container bloc-lg">
+            <div class="row tight-width-whitespace">
+              <div class="col-sm-12">
+                <img
+                  src="./static/images/logo.png"
+                  class="center-block image-resize-mode"
+                  width="100"
+                  alt="Logo d'une chouette"
+                />
+
+                <!-- Accessibility – Bad contrast contrast color -->
+                <h1 class="text-center hero-bloc-text tc-white ">
+                  La chouette agence.
+                </h1>
+                <div class="text-center">
+                  <!-- SEO - Bad name URL contact ! -->
+                  <a
+                    href="contact.html"
+                    class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine"
+                    id="cta-hero"
+                    >Contact</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bloc-1-presentation END -->
+      </header>
+      <!-- Header bloc-0 => bloc-1 END -->
+
+      <!-- Main - bloc-2 => bloc-7 -->
+      <main>
+        <!-- bloc-2-services -->
+        <!-- Best Practices – Name ID "services" -->
+        <article
+          id="bloc-2-services"
+          class="bloc bgc-white l-bloc"
+          aria-label="Services"
+        >
+          <div class="container bloc-md">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2>
+                  La chouette agence est une agence de Webdesign qui aide<br />les
+                  entreprises à devenir attractives et visibles sur internet.
+                </h2>
+              </div>
+            </div>
+            <div class="row v-offset-lg med-width-whitespace">
+              <div class="col-sm-4">
+                <div class="text-center">
+                  <span
+                    class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"
+                  ></span>
+                </div>
+                <h3 class="mg-md text-center">Webdesign</h3>
+                <p class="text-center ">
+                  Que vous ayez un site web qui a besoin d'&rsquo;'un
+                  rafraîchissement ou que vous partiez de zéro, laissez-nous
+                  vous réaliser un design dont vous serez fier.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <div class="text-center">
+                  <span
+                    class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"
+                  ></span>
+                </div>
+                <h3 class="mg-md text-center">Stratégie</h3>
+                <p class="text-center ">
+                  Plutôt que de suggérer des designs à la mode, nous
+                  travaillerons avec vous pour comprendre vos objectifs
+                  commerciaux afin de vous proposer le meilleur design
+                  possible.<br />
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <div class="text-center">
+                  <span
+                    class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"
+                  ></span>
+                </div>
+                <h3 class="mg-md text-center">
+                  Illustrations
+                </h3>
+                <p class="text-center ">
+                  Un bon design n'est rien sans de bonnes illustrations. Laissez
+                  faire notre équipe de graphistes talentueux pour donner à vos
+                  pages une touche finale d'élégance.
+                </p>
+              </div>
+            </div>
+            <div class="row v-offset-lg v-offset">
+              <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+                <h2>
+                  <em
+                    >"La chouette agence est une excellente agence web ! Les<br />
+                    Web Designers ont réussi à capturer l'essence de notre<br />entreprise
+                    et à l'intégrer à notre site. Cela nous a aidés à<br />doubler
+                    nos ventes en ligne à Lyon."</em
+                  >
+                </h2>
+                <p>Maxime Guibard, PDG de À vos fourchettes</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- bloc-2-services END -->
+
+        <!-- bloc-3-what-i-do -->
+        <section
+          class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax"
+          id="bloc-3-what-i-do"
+          aria-label="Collaborer"
+        >
+          <!-- Accessibility – Bad contrast contrast color -->
+          <div class="container bloc-lg">
+            <div class="row tight-width-whitespace black-background">
+              <div class="col-sm-12">
+                <h2 class="mg-md text-center tc-white">
+                  Nous souhaitons aider les entreprises de la région Lyonnaise à
+                  se développer et à connaître le succès. Nous travaillons pour
+                  aider les entreprises locales à attirer de nouveaux clients
+                  .<br />
+                </h2>
+                <p class="text-center white">
+                  Nous aimons collaborer avec des entrepreneurs créatifs et des
+                  entreprises locales, qu’elles aient besoin de créer un site de
+                  A à Z ou de donner un coup de jeune à leur site. Que vous ayez
+                  besoin d’une identité visuelle complète ou d’une refonte de
+                  votre site, n’hésitez pas à nous contacter. Nous travaillerons
+                  ensemble pour créer des sites beauw et bien structurés, qui
+                  seront facilement trouvables sur les moteurs de recherche.
+                  <br /><br /><a class="ltc-white bold-link" href="contact.html"
+                    >Contactez notre équipe</a
+                  ><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- bloc-3-what-i-do END -->
+
+        <!-- bloc-4-portfolio -->
+        <!-- Best Practices – Name ID "réalisations" -->
+        <article
+          id="bloc-4-portfolio"
+          class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc"
+          aria-label="Réalisation"
+        >
+          <div class="container bloc-lg">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2>
+                  Nous travaillons avec beaucoup de clients,<br />voici nos
+                  réalisations.
+                </h2>
+              </div>
+            </div>
+            <div class="row tight-width-whitespace portfolio-row">
+              <div class="col-sm-6">
+                <a
+                  href="#"
+                  data-lightbox="./static/images/lightbox-image-1.jpg"
+                  data-gallery-id="gallery-1"
+                  data-caption="Refonte d'un site web pour un journal local"
+                  data-frame="snapshot-lb"
+                  ><img
+                    class="img-responsive portfolio-thumb"
+                    src="./static/images/thumbnail-1.jpg"
+                    alt="Image qui représente la refonte site web journal."
+                    width="270"
+                    height="270"
+                /></a>
+                <h3 class="text-center">
+                  Refonte d'un site web pour un journal local
+                </h3>
+                <p class="text-center">
+                  Nous avons créé une nouvelle identité visuelle pour un journal
+                  lyonnais.
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <a
+                  href="#"
+                  data-lightbox="./static/images/lightbox-image-2.jpg"
+                  data-gallery-id="gallery-1"
+                  data-caption="Création d'un site web pour photographes"
+                  data-frame="snapshot-lb"
+                  ><img
+                    class="img-responsive portfolio-thumb"
+                    src="./static/images/thumbnail-2.jpg"
+                    alt="Image qui représente la création d'un site web pour photographes."
+                    width="270"
+                    height="270"
+                /></a>
+                <h3 class="text-center">
+                  Création d'un site web pour photographes
+                </h3>
+                <p class="text-center">
+                  Nous avons conçu la plateforme idéale pour laisser place aux
+                  clichés des photographes.
+                </p>
+              </div>
+            </div>
+            <div class="row tight-width-whitespace portfolio-row">
+              <div class="col-sm-6">
+                <a
+                  href="#"
+                  data-lightbox="./static/images/lightbox-image-3.jpg"
+                  data-gallery-id="gallery-1"
+                  data-caption="Création d'un site internet pour un voyageur"
+                  data-frame="snapshot-lb"
+                  ><img
+                    class="img-responsive portfolio-thumb"
+                    src="./static/images/thumbnail-3.jpg"
+                    alt="Image qui représente la création d'un site web pour voyageur."
+                    width="270"
+                    height="270"
+                /></a>
+                <h3 class="text-center">
+                  Création d'un site internet pour un voyageur
+                </h3>
+                <p class="text-center">
+                  Nous avons élaboré un site internet et des illustrations pour
+                  sublimer les vidéos et les articles de ce voyageur.
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <a
+                  href="#"
+                  data-lightbox="./static/images/lightbox-image-4.jpg"
+                  data-gallery-id="gallery-1"
+                  data-caption="Conception d'un site pour une agence de mariage"
+                  data-frame="snapshot-lb"
+                  ><img
+                    class="img-responsive portfolio-thumb"
+                    src="./static/images/thumbnail-4.jpg"
+                    alt="Image qui représente la création d'un site web pour agence de mariage."
+                    width="270"
+                    height="270"
+                /></a>
+                <h3 class="text-center">
+                  Conception d'un site pour une agence de mariage
+                </h3>
+                <p class="text-center">
+                  Nous avons travaillé avec cette agence pour créer un site
+                  internet permettant la présentation détaillée de leurs
+                  prestations.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-12 text-center">
+              <h2>
+                Ils nous font confiance.
+              </h2>
+              <div>
+                <span class="col-sm-2"
+                  ><img
+                    src="./static/images/volvo-2.svg"
+                    alt="Logo de Volvo"
+                    height="80"
+                /></span>
+                <span class="col-sm-2"
+                  ><img
+                    src="./static/images/ing-group.svg"
+                    alt="Logo de Ing Group"
+                    height="80"
+                /></span>
+                <span class="col-sm-2"
+                  ><img
+                    src="./static/images/rbs-group.svg"
+                    alt="Logo de Rbs Group"
+                    height="80"
+                /></span>
+                <span class="col-sm-2"
+                  ><img
+                    src="./static/images/kinepolis-group.svg"
+                    alt="Logo de Kinepolis Group"
+                    height="80"
+                /></span>
+                <span class="col-sm-2"
+                  ><img
+                    src="./static/images/wpp-group.svg"
+                    alt="Logo de Wpp Group"
+                    height="80"
+                /></span>
+                <span class="col-sm-2"
+                  ><img
+                    src="./static/images/altria-group.svg"
+                    alt="Logo de Altria Group"
+                    height="80"
+                /></span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- bloc-4-portfolio END -->
+
+        <!-- bloc-5-cta -->
+
+        <!-- Best Practices – Name ID "contact" -->
+        <section
+          id="bloc-5-cta"
+          class="bloc bg-banner bgc-dark-slate-blue d-bloc bloc-bg-texture texture-paper"
+          aria-label="Contact"
+        >
+          <!-- Accessibility – Bad contrast contrast color -->
+          <div class="container bloc-lg">
+            <div class="row">
+              <h2 class="mg-md text-center tc-white">
+                Prêt pour redonner vie à votre projet ?<br />Contactez notre
+                équipe !
+              </h2>
+              <div class="col-sm-12 text-center">
+                <!-- SEO - Name URL contact ! -->
+                <a
+                  href="./contact.html"
+                  class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero"
+                  >Contact</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- bloc-5-cta END -->
+      </main>
+      <!-- Main - bloc-2 => bloc-7 END -->
+
+      <!-- Footer - bloc-8 -->
+      <footer id="bloc-8" class="bloc bgc-atomic-tangerine d-bloc">
+        <div class="container bloc-sm">
+          <div class="row">
+            <nav class="col-sm-12" aria-label="’secondary’">
+              <!-- Best Practices - User <hn> -->
+              <h2 class="text-center white">
+                La chouette agence - Agence web basée à Lyon.<br />
+              </h2>
+              <div class="row row-no-gutters social">
+                <div class="col-sm-3">
+                  <div class="text-center social">
+                    <!-- Best Practices - Target blank and rel noopener noreferrer ! -->
+                    <!-- Accessibility – Add aria-label names in the accessible links for icons -->
+                    <a
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Retrouvez-nous sur Twitter"
+                      aria-label="Retrouvez-nous sur Twitter"
+                    >
+                      <span class="fa fa-twitter icon-md"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center social">
+                    <!-- Best Practices - Target blank and rel noopener noreferrer ! -->
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Retrouvez-nous sur Facebook"
+                      aria-label="Retrouvez-nous sur Facebook"
+                    >
+                      <span class="fa fa-facebook icon-md"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center social">
+                    <!-- Best Practices - Target blank and rel noopener noreferrer ! -->
+                    <a
+                      href="https://dribbble.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Retrouvez-nous sur Dribble"
+                      aria-label="Retrouvez-nous sur Dribble"
+                    >
+                      <span class="fa fa-dribbble icon-md"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center social">
+                    <!-- Best Practices - Target blank and rel noopener noreferrer ! -->
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Retrouvez-nous sur Instagram"
+                      aria-label="Retrouvez-nous sur Instagram"
+                    >
+                      <span class="fa fa-instagram icon-md"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SEO – Detection of a content of cloaking -->
+
+              <!-- SEO - Optimization guide of the url for a good seo ! -->
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <div class="col-sm-4">
+                    <!-- Best Practices - User <hn> -->
+                    <h3 class="white">Partenaires</h3>
+
+                    <!-- Best Practices - Target blank and rel noopener noreferrer ! -->
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.point-web.fr/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Point Web</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.cybercite.fr/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Cyber Cité</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.reputationvip.com/fr/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Réputation VIP</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4">
+                    <!-- Best Practices - User <hn> -->
+                    <h3 class="white">Prestations</h3>
+
+                    <!-- Best Practices - Target blank and rel noopener noreferrer ! -->
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.photolightandlife.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Photo Light and Life</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lyonplus.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Lyon Plus</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.espritlibrevoyages.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Esprit Libre Voyages</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4">
+                    <!-- Best Practices - User <hn> -->
+                    <h3 class="white">Emplois</h3>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.rhonealpesjob.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Rhône Alpes Job</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.grandlyon.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Grand Lyon</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.labo-cites.org/offres-d-emploi"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Labo Cité</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer - bloc-8 END -->
+    </div>
+    <!-- Principal conteneur END -->
+
+    <!-- Best Practices - ScrollToTop Button -->
+    <!-- ScrollToTop Button -->
+    <button
+      class="bloc-button btn btn-d scrollToTop"
+      onclick="scrollToTarget('1')"
+      aria-label="Retour en haut"
+    >
+      <span class="fa fa-chevron-up"></span>
+    </button>
+    <!-- ScrollToTop Button END-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-28372011-7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-28372011-7');
+    </script>
+    <!-- Google Analytics END -->
+
+    <!-- Performance - minify and concat js + after body + defer + cache-control -->
+    <script defer src="./static/js/main.min.js"></script>
+  </body>
+</html>
+<!-- Copyright 2020 – Joël Lesenne <https://joellesenne.dev> – Tous droits réservés -->
