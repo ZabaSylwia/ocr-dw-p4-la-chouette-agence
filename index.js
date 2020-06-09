@@ -1,1 +1,1 @@
-// entry point for NPM
+// entry point for NPM || Node.js
